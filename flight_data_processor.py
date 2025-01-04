@@ -167,8 +167,8 @@ class FlightDataProcessor:
         '2024-05-20', # Whit Monday (Pentecost Monday)
         '2024-08-01', # National Day
         '2024-09-05', # Geneva Fast
-        '2023-12-25', # Christmas Day                               # Update as soon as December 2024 Data is Available
-        '2023-12-31', # Restoration of the Republic                 # Update as soon as December 2024 Data is Available
+        '2024-12-25', # Christmas Day                               
+        '2024-12-31', # Restoration of the Republic                 
         ]]
         zurich_holidays = [pd.to_datetime(date).date() for date in [
         '2024-01-01', # New Year's Day
@@ -179,8 +179,8 @@ class FlightDataProcessor:
         '2024-05-09', # Ascension Day
         '2024-05-20', # Whit Monday (Pentecost Monday)
         '2024-08-01', # National Day
-        '2023-12-25', # Christmas Day                               # Update as soon as December 2024 Data is Available
-        '2023-12-26', # St. Stephen's Day                           # Update as soon as December 2024 Data is Available
+        '2024-12-25', # Christmas Day                               
+        '2024-12-26', # St. Stephen's Day                           
         ]]
 
         # Function to determine if a flight is on a public holiday
