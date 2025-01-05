@@ -13,7 +13,7 @@ from keras import layers, callbacks
 import matplotlib.pyplot as plt
 
 # Load and prepare data
-df = pd.read_csv('/Users/anis.larid/Desktop/Flight_Delay_Project/3_Gen_AI/ML_flight_delay_data_2024_balanced.csv')
+df = pd.read_csv('/Users/anis.larid/Desktop/Flight_Delay_Project/ML_flight_delay_data_2024_balanced.csv')
 X = df.drop(columns='Departure_Status')
 y = df['Departure_Status'].map({'On-Time': 0, 'Delayed': 1})
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
