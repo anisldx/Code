@@ -73,7 +73,7 @@ class FlightDelayPredictor:
         return joblib.load(filepath)
 
 def main():
-    data = pd.read_csv('/Users/anis.larid/Desktop/Flight_Delay_Project/3_Gen_AI/ML_flight_delay_data_2024_balanced.csv')
+    data = pd.read_csv('/Users/anis.larid/Desktop/Flight_Delay_Project/ML_flight_delay_data_2024_balanced.csv')
     X = data.drop(columns='Departure_Status')
     y = data['Departure_Status']
     
