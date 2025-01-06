@@ -220,7 +220,7 @@ class FlightDelayApp:
     def __init__(self):
         st.set_page_config(layout="wide")
         self.model = joblib.load("flight_delay_model.joblib")
-        self.weather_service = WeatherService(api_key='PQUSUW8RN3LRLG8CKA2QRRDBG')
+        self.weather_service = WeatherService(api_key='PQUSUW8RN3LRLG8CKA2QRRDBW')
         self.airport_service = AirportDataService()
         self.flight_inputs = FlightInputs()
         self.ui = UIRenderer()
